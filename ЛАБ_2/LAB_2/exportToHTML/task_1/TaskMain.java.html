@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>TaskMain.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cf8e6d;}
+.s1 { color: #bcbec4;}
+.s2 { color: #bcbec4;}
+.s3 { color: #5f826b; font-style: italic;}
+.s4 { color: #67a37c; font-style: italic;}
+.s5 { color: #6aab73;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+TaskMain.java</font>
+</center></td></tr></table>
+<pre><span class="s0">package </span><span class="s1">task_1</span><span class="s2">;</span>
+
+<span class="s0">import </span><span class="s1">java</span><span class="s2">.</span><span class="s1">io</span><span class="s2">.</span><span class="s1">IOException</span><span class="s2">;</span>
+
+<span class="s3">/**</span>
+ <span class="s3">* Program that searches for the shortest and longest numbers in a sequence</span>
+ <span class="s3">*</span>
+ <span class="s3">* </span><span class="s4">@see </span><span class="s3">DevInfo</span>
+ <span class="s3">* </span><span class="s4">@see </span><span class="s3">NumericSequences</span>
+ <span class="s3">* </span><span class="s4">@author </span><span class="s3">Dmitry Moskvitin</span>
+ <span class="s3">*/</span>
+<span class="s0">public class </span><span class="s1">TaskMain </span><span class="s2">{</span>
+    <span class="s3">/**</span>
+     <span class="s3">* Program entry point</span>
+     <span class="s3">*</span>
+     <span class="s3">* </span><span class="s4">@param </span><span class="s3">args command-line arguments</span>
+     <span class="s3">*/</span>
+    <span class="s0">public static void </span><span class="s1">main</span><span class="s2">(</span><span class="s1">String</span><span class="s2">[] </span><span class="s1">args</span><span class="s2">) </span><span class="s0">throws </span><span class="s1">IOException </span><span class="s2">{</span>
+        <span class="s0">int</span><span class="s2">[] </span><span class="s1">sequence </span><span class="s2">= </span><span class="s1">NumericSequences</span><span class="s2">.</span><span class="s1">getIntegerSequence</span><span class="s2">();</span>
+        <span class="s1">NumericSequences</span><span class="s2">.</span><span class="s1">findShortestAndLongest</span><span class="s2">(</span><span class="s1">sequence</span><span class="s2">);</span>
+        <span class="s1">getDevInfo</span><span class="s2">();</span>
+    <span class="s2">}</span>
+
+    <span class="s0">static void </span><span class="s1">getDevInfo</span><span class="s2">() {</span>
+        <span class="s1">DevInfo info </span><span class="s2">= </span><span class="s0">new </span><span class="s1">DevInfo</span><span class="s2">();</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">printf</span><span class="s2">(</span><span class="s5">&quot;</span><span class="s0">\n</span><span class="s5">Разработчик: %s</span><span class="s0">\n</span><span class="s5">&quot;</span><span class="s2">, </span><span class="s1">info</span><span class="s2">.</span><span class="s1">getName</span><span class="s2">());</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">printf</span><span class="s2">(</span><span class="s5">&quot;Дата и время получения работы: %s</span><span class="s0">\n</span><span class="s5">&quot;</span><span class="s2">, </span><span class="s1">info</span><span class="s2">.</span><span class="s1">getStartDateTime</span><span class="s2">());</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">printf</span><span class="s2">(</span><span class="s5">&quot;Дата и время сдачи работы: %s</span><span class="s0">\n</span><span class="s5">&quot;</span><span class="s2">, </span><span class="s1">info</span><span class="s2">.</span><span class="s1">getEndDateTime</span><span class="s2">());</span>
+    <span class="s2">}</span>
+<span class="s2">}</span>
+</pre>
+</body>
+</html>
