@@ -5,7 +5,7 @@ import org.w3c.dom.ls.LSOutput;
 import java.util.Scanner;
 
 /**
- * Main class in the package
+ * Program that stores and parses students information
  * @see Student
  * @see Validator
  * @see StudentArray

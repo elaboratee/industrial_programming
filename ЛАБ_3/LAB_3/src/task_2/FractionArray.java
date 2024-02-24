@@ -10,6 +10,7 @@ class FractionArray {
     private final ArrayList<RationalFraction> objectArray = new ArrayList<>();
     private int length = 0;
 
+    // Getters and setters
     /**
      * @return length of a FractionArray instance
      */
@@ -17,6 +18,11 @@ class FractionArray {
         return length;
     }
 
+    // Methods
+    /**
+     * Adds rational fraction to the FractionArray instance
+     * @param fraction rational fraction to add
+     */
     public void addFraction(RationalFraction fraction) {
         objectArray.add(fraction);
         length++;
@@ -26,6 +32,10 @@ class FractionArray {
         return objectArray;
     }
 
+    /**
+     * Modifies rational fractions that have even indexes by adding
+     * the following rational fraction
+     */
     public void modifyEvenIndexes() {
         RationalFraction elementToInsert;
         for (int i = 0; i < length; i += 2) {

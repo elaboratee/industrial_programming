@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
- * Main class in the package
+ * Program that calculates the sum of the given polynomials
  * @see Polynomial
  * @see task_2.RationalFraction
  * @author Ilya Sokol

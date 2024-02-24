@@ -3,7 +3,7 @@ package task_2;
 import java.util.Scanner;
 
 /**
- * Main class in the package
+ * Program that processes an array of rational fractions
  * @see RationalFraction
  * @see FractionArray
  * @author Ilya Sokol
