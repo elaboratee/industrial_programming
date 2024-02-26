@@ -1,15 +1,15 @@
 package task_1;
 
-import org.w3c.dom.ls.LSOutput;
-
+import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
  * Program that stores and parses students information
+ *
+ * @author Ilya Sokol
  * @see Student
  * @see Validator
- * @see StudentArray
- * @author Ilya Sokol
+ * @see ParseStudents
  */
 class TaskMain {
     public static void main(String[] args) {
@@ -18,7 +18,7 @@ class TaskMain {
         System.out.print("Введите количество добавляемых студентов: ");
         int n = console.nextInt();
 
-        StudentArray studentArray = new StudentArray();
+        ArrayList<Student> students = new ArrayList<>();
 
         // Filling the array with Student instances
         for (int i = 0; i < n; i++) {
@@ -54,19 +54,18 @@ class TaskMain {
             System.out.print("Группа: ");
             student.setGroup(console.next());
 
-            studentArray.addStudent(student);
+            students.add(student);
         }
 
         // Console output of the StudentArray
         System.out.println("\nСписок описанных студентов:");
-        for (Student element : studentArray.getArray()) {
-            System.out.println(element.toString());
-        }
+        printStudentArray(students);
 
-        getMenu(studentArray);
+        getMenu(students);
+        console.close();
     }
 
-    private static void getMenu(StudentArray studentArray) {
+    private static void getMenu(ArrayList<Student> students) {
         Scanner console = new Scanner(System.in);
         System.out.println("""
                 \nЧТО НУЖНО ВЫВЕСТИ?
@@ -83,25 +82,32 @@ class TaskMain {
         switch (menu) {
             case 1:
                 System.out.print("\nВведите название факультета (аббревиатуру): ");
-                System.out.println(studentArray.parseFaculty(console.next()));
+                printStudentArray(ParseStudents.parseFaculty(students, console.next()));
                 break;
             case 2:
                 System.out.print("\nВведите название факультета (аббревиатуру): ");
                 stringParam = console.next();
                 System.out.print("\nВведите номер курса: ");
                 byteParam = console.nextByte();
-                System.out.println(studentArray.parseFacultyAndGrade(stringParam, byteParam));
+                printStudentArray(ParseStudents.parseFacultyAndGrade(students, stringParam, byteParam));
                 break;
             case 3:
                 System.out.print("\nВведите год: ");
-                System.out.println(studentArray.parseGreaterBirthDate(console.nextInt()));
+                printStudentArray(ParseStudents.parseGreaterBirthDate(students, console.nextInt()));
                 break;
             case 4:
                 System.out.print("Введите номер учебной группы: ");
-                System.out.println(studentArray.parseGroup(console.next()));
+                printStudentArray(ParseStudents.parseGroup(students, console.next()));
                 break;
             default:
                 System.out.println("Выбран несуществующий пункт меню!");
+        }
+        console.close();
+    }
+
+    private static void printStudentArray(ArrayList<Student> students) {
+        for (Student student : students) {
+            System.out.println(student.toString());
         }
     }
 }

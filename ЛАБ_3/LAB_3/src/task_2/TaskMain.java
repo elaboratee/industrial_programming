@@ -29,13 +29,15 @@ class TaskMain {
         }
 
         System.out.println("\nВведенные рациональные дроби:");
-        for (RationalFraction fraction : fractionArray.getArray()) {
-            System.out.printf("%s\n", fraction.toString());
-        }
+        printFractionArray(fractionArray);
 
         fractionArray.modifyEvenIndexes();
 
         System.out.println("\nМодифицированные рациональные дроби:");
+        printFractionArray(fractionArray);
+    }
+
+    private static void printFractionArray(FractionArray fractionArray) {
         for (RationalFraction fraction : fractionArray.getArray()) {
             System.out.printf("%s\n", fraction.toString());
         }

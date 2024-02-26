@@ -7,7 +7,7 @@ import java.util.ArrayList;
  * @author Ilya Sokol
  */
 class FractionArray {
-    private final ArrayList<RationalFraction> objectArray = new ArrayList<>();
+    private final ArrayList<RationalFraction> fractions = new ArrayList<>();
     private int length = 0;
 
     // Getters and setters
@@ -24,12 +24,12 @@ class FractionArray {
      * @param fraction rational fraction to add
      */
     public void addFraction(RationalFraction fraction) {
-        objectArray.add(fraction);
+        fractions.add(fraction);
         length++;
     }
 
     public ArrayList<RationalFraction> getArray() {
-        return objectArray;
+        return fractions;
     }
 
     /**
@@ -42,8 +42,8 @@ class FractionArray {
             if (i == length - 1) {
                 break;
             }
-            elementToInsert = objectArray.get(i).add(objectArray.get(i + 1));
-            objectArray.set(i, elementToInsert);
+            elementToInsert = fractions.get(i).add(fractions.get(i + 1));
+            fractions.set(i, elementToInsert);
         }
     }
 }
