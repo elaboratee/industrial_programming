@@ -35,6 +35,8 @@ class TaskMain {
 
         System.out.println("\nМодифицированные рациональные дроби:");
         printFractionArray(fractionArray);
+
+        console.close();
     }
 
     private static void printFractionArray(FractionArray fractionArray) {

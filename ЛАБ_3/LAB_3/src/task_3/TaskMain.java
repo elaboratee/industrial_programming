@@ -48,5 +48,7 @@ class TaskMain {
         }
 
         System.out.printf("\nСумма полиномов: %s", sum.toString());
+
+         console.close();
     }
 }
