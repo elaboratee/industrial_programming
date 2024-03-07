@@ -1,9 +1,28 @@
 package task_2.flowers;
 
+import java.util.Objects;
+
 public abstract class Flower {
     protected String color;
     protected int freshness;
     protected double stemLength;
+    protected int price;
+
+    public String getColor() {
+        return color;
+    }
+
+    public int getFreshness() {
+        return freshness;
+    }
+
+    public double getStemLength() {
+        return stemLength;
+    }
+
+    public int getPrice() {
+        return price;
+    }
 
     public boolean isInStemRange(double lowerBorder, double upperBorder) {
         boolean isInRange = false;
@@ -14,9 +33,27 @@ public abstract class Flower {
         return isInRange;
     }
 
-    public abstract boolean equals();
+    @Override
+    public boolean equals(Object object) {
+        if (this == object) return true;
+        if (!(object instanceof Flower flower)) return false;
+        return freshness == flower.freshness &&
+                Double.compare(stemLength, flower.stemLength) == 0 &&
+                price == flower.price && Objects.equals(color, flower.color);
+    }
 
-    public abstract int hashCode();
+    @Override
+    public int hashCode() {
+        return Objects.hash(color, freshness, stemLength, price);
+    }
 
-    public abstract String toString();
+    @Override
+    public String toString() {
+        return "Flower{" +
+                "color='" + color + '\'' +
+                ", freshness=" + freshness +
+                ", stemLength=" + stemLength +
+                ", price=" + price +
+                '}';
+    }
 }
