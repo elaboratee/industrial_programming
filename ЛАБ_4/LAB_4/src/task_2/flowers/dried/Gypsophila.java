@@ -14,7 +14,7 @@ public final class Gypsophila extends DriedFlower {
 
     public Gypsophila(String color, boolean isTerry) {
         super();
-        this.color = color;
+        this.color = color.toLowerCase();
         stemLength = 50;
         price = 250;
         this.isTerry = isTerry;
