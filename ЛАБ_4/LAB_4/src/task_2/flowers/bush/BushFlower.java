@@ -5,11 +5,11 @@ import java.util.Objects;
 
 public class BushFlower extends Flower {
     protected boolean hasFetus;
-    protected boolean isFrostResistance;
+    protected boolean isFrostResistant;
 
     public BushFlower() {
         hasFetus = false;
-        isFrostResistance = false;
+        isFrostResistant = false;
     }
 
     @Override
@@ -17,19 +17,19 @@ public class BushFlower extends Flower {
         if (this == object) return true;
         if (!(object instanceof BushFlower that)) return false;
         if (!super.equals(object)) return false;
-        return hasFetus == that.hasFetus && isFrostResistance == that.isFrostResistance;
+        return hasFetus == that.hasFetus && isFrostResistant == that.isFrostResistant;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(super.hashCode(), hasFetus, isFrostResistance);
+        return Objects.hash(super.hashCode(), hasFetus, isFrostResistant);
     }
 
     @Override
     public String toString() {
         return "BushFlower{" +
                 "hasFetus=" + hasFetus +
-                ", isFrostResistance=" + isFrostResistance +
+                ", isFrostResistance=" + isFrostResistant +
                 ", color='" + color + '\'' +
                 ", freshness=" + freshness +
                 ", stemLength=" + stemLength +

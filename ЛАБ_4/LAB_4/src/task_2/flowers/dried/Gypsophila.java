@@ -20,7 +20,7 @@ public final class Gypsophila extends DriedFlower {
         this.isTerry = isTerry;
     }
 
-    public boolean getTerry() {
+    public boolean isTerry() {
         return isTerry;
     }
 
@@ -29,12 +29,12 @@ public final class Gypsophila extends DriedFlower {
         if (this == object) return true;
         if (!(object instanceof Gypsophila that)) return false;
         if (!super.equals(object)) return false;
-        return getTerry() == that.getTerry();
+        return isTerry() == that.isTerry();
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(super.hashCode(), getTerry());
+        return Objects.hash(super.hashCode(), isTerry());
     }
 
     @Override

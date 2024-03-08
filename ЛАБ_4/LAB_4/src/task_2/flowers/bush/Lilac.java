@@ -71,7 +71,7 @@ public final class Lilac extends BushFlower {
                 "hasEdging=" + hasEdging +
                 ", edgingColor='" + edgingColor + '\'' +
                 ", hasFetus=" + hasFetus +
-                ", isFrostResistance=" + isFrostResistance +
+                ", isFrostResistance=" + isFrostResistant +
                 ", color='" + color + '\'' +
                 ", freshness=" + freshness +
                 ", stemLength=" + stemLength +

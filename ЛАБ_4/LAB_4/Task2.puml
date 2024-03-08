@@ -1,0 +1,103 @@
+@startuml
+
+package flowers #DDDDDD {
+    abstract class Flower {
+        # String color
+        # int freshness
+        # double stemLength
+        # int price
+        ==
+        + String getColor()
+        + int getFreshness()
+        + double getStemLength()
+        + int getPrice()
+        + boolean isInStemRange()
+        --
+        + boolean equals()
+        + int hashCode()
+        + String toString()
+    }
+}
+
+package flowers.dried #DDDDDD {
+    class DriedFlower
+
+    class Echinops {
+        - boolean isTerry
+        - boolean isBarbed
+        ==
+        + boolean isTerry()
+        + boolean isBarbed()
+        --
+        + boolean equals()
+        + int hashCode()
+        + String toString()
+    }
+
+    class Gypsophila {
+        - boolean isTerry
+        ==
+        + boolean isTerry()
+        --
+        + boolean equals()
+        + int hashCode()
+        + String toString()
+    }
+}
+
+package flowers.bush #DDDDDD {
+    class BushFlower {
+        # boolean hasFetus
+        # boolean isFrostResistant
+        ==
+        + boolean equals()
+        + int hashCode()
+        + String toString()
+    }
+
+    class Lilac {
+        - boolean hasEdging
+        - String edgingColor
+        ==
+        + boolean hasEdging()
+        + String getEdgingColor()
+        + void setEdgingColor()
+        + void setFreshness()
+        --
+        + boolean equals()
+        + int hasEdging()
+        + String toString()
+    }
+
+    class Rose {
+        - boolean hasSpikes
+        ==
+        + boolean hasSpikes()
+        + void setFreshness()
+        --
+        + boolean equals()
+        + int hashCode()
+        + String toString()
+    }
+}
+
+package flowers.meadow #DDDDDD {
+}
+
+package flowers.bulbous #DDDDDD {
+}
+
+Flower <|-- DriedFlower
+Flower <|-- BushFlower
+
+DriedFlower <|-- Echinops
+DriedFlower <|-- Gypsophila
+
+BushFlower <|-- Lilac
+BushFlower <|-- Rose
+
+
+package accessories #DDDDDD {
+}
+
+@enduml
