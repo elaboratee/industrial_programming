@@ -15,5 +15,5 @@ public enum BodyTypes {
     VAN,
     LIMOUSINE,
     CAMPERVAN,
-    TRUCK,
+    TRUCK
 }

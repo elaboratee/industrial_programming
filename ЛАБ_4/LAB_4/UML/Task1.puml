@@ -1,0 +1,115 @@
+@startuml
+
+package enums #DDDDDD {
+    enum BodyTypes {
+        MICRO
+        SEDAN
+        CUV
+        SUV
+        HATCHBACK
+        COUPE
+        MINIVAN
+        CABRIO
+        ROADSTER
+        SUPERCAR
+        PICKUP
+        VAN
+        LIMOUSINE
+        CAMPERVAN
+        TRUCK
+    }
+
+    enum Seasonalities {
+        SUMMER
+        WINTER
+        MULTISEASONAL
+    }
+}
+
+class Car {
+    - String brand
+    - String color
+    - BodyTypes bodytype
+    - int fuelTankVolume
+    - double fuelValue
+    - int seatsAmount
+    - int mass
+    - Engine engine
+    - Wheel[] wheels
+    == Methods ==
+    + String getBrand()
+    + String getColor()
+    + void setColor()
+    + BodyTypes getBodyType()
+    + int getFuelTankVolume()
+    + void setFuelTankVolume()
+    + double getFuelValue()
+    + int getSeatsAmount()
+    + void setSeatsAmount()
+    + int getMass()
+    + void setMass()
+    + Engine getEngine()
+    + void setEngine()
+    + Wheel[] getWheels()
+    + void setWheels()
+    + void drive()
+    + void fillFuel()
+    + void changeWheel()
+    --
+    + boolean equals()
+    + int hashCode()
+    + String toString()
+}
+
+class Engine {
+    - double volume
+    - int power
+    - double fuelConsumption
+    == Methods ==
+    + double getVolume()
+    + void setVolume()
+    + int getPower()
+    + void setPower()
+    + double getFuelConsumption()
+    + void setFuelConsumption()
+    --
+    + boolean equals()
+    + int hashCode()
+    + String toString()
+}
+
+class Wheel {
+    - String manufacturer
+    - String seasonality
+    - int width
+    - int profile
+    - int radius
+    - boolean spikes
+    == Methods ==
+    + String getManufacturer()
+    + void setManufacturer()
+    + String getSeasonality()
+    + void setSeasonality()
+    + int geteWidth()
+    + void setWidth()
+    + int getProfile()
+    + void setProfile()
+    + int getRadius()
+    + void setRadius()
+    + boolean hasSpikes()
+    + void setSpikes()
+    --
+    + boolean equals()
+    + int hashCode()
+    + String toString()
+}
+
+class TaskMain {
+    + {static} void main()
+    - {static} void printWheels()
+}
+
+Car *-- Engine
+Car *-- Wheel
+
+@enduml

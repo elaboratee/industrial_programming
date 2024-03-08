@@ -1,7 +1,6 @@
 package task_1;
 
 import task_1.enums.Seasonalities;
-
 import java.util.Objects;
 
 class Wheel {
@@ -95,7 +94,7 @@ class Wheel {
         }
     }
 
-    public boolean isSpikes() {
+    public boolean hasSpikes() {
         return spikes;
     }
 

@@ -6,7 +6,7 @@ package flowers #DDDDDD {
         # int freshness
         # double stemLength
         # int price
-        ==
+        == Methods ==
         + String getColor()
         + int getFreshness()
         + double getStemLength()
@@ -25,7 +25,7 @@ package flowers.dried #DDDDDD {
     class Echinops {
         - boolean isTerry
         - boolean isBarbed
-        ==
+        == Methods ==
         + boolean isTerry()
         + boolean isBarbed()
         --
@@ -36,7 +36,7 @@ package flowers.dried #DDDDDD {
 
     class Gypsophila {
         - boolean isTerry
-        ==
+        == Methods ==
         + boolean isTerry()
         --
         + boolean equals()
@@ -49,7 +49,7 @@ package flowers.bush #DDDDDD {
     class BushFlower {
         # boolean hasFetus
         # boolean isFrostResistant
-        ==
+        == Methods ==
         + boolean equals()
         + int hashCode()
         + String toString()
@@ -58,7 +58,7 @@ package flowers.bush #DDDDDD {
     class Lilac {
         - boolean hasEdging
         - String edgingColor
-        ==
+        == Methods ==
         + boolean hasEdging()
         + String getEdgingColor()
         + void setEdgingColor()
@@ -71,7 +71,7 @@ package flowers.bush #DDDDDD {
 
     class Rose {
         - boolean hasSpikes
-        ==
+        == Methods ==
         + boolean hasSpikes()
         + void setFreshness()
         --
