@@ -2,7 +2,7 @@ package task_2.accessories;
 
 import java.util.Objects;
 
-public final class Postcard extends Accessory{
+public final class Postcard extends Accessory {
     private final String content;
 
     // constructors

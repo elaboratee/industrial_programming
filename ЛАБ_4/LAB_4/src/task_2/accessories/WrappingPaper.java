@@ -2,7 +2,7 @@ package task_2.accessories;
 
 import java.util.Objects;
 
-public final class WrappingPaper extends Accessory{
+public final class WrappingPaper extends Accessory {
     private final int width;
     private final int length;
 

@@ -1,12 +1,8 @@
 package task_2;
 
-import task_2.accessories.Accessory;
-import task_2.accessories.WrappingPaper;
+
 import task_2.enums.MenuBar;
 import task_2.flowers.Flower;
-import task_2.flowers.bush.Rose;
-import task_2.flowers.dried.Echinops;
-import task_2.flowers.dried.Gypsophila;
 
 import java.nio.file.Watchable;
 import java.util.ArrayList;

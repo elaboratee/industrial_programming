@@ -2,7 +2,7 @@ package task_2.accessories;
 
 import java.util.Objects;
 
-public final class Basket extends Accessory{
+public final class Basket extends Accessory {
     private final String size;
 
     // constructors
