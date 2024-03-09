@@ -2,7 +2,7 @@ package task_2.accessories;
 
 import java.util.Objects;
 
-public final class Ribbon extends Accessory{
+public final class Ribbon extends Accessory {
     private final int length;
 
     // constructors
@@ -17,7 +17,7 @@ public final class Ribbon extends Accessory{
         this.color = color;
         material = "silk";
         this.length = length;
-        price = length * 40;
+        price = (int) (length * 0.4);
     }
 
     // methods

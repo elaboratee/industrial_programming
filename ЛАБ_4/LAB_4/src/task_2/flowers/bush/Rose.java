@@ -28,10 +28,10 @@ public final class Rose extends BushFlower {
         hasSpikes = true;
     }
 
-    public Rose(String color, boolean hasSpikes) {
+    public Rose(String color, boolean hasSpikes, int freshness) {
         super();
         this.color = color.toLowerCase();
-        freshness = 0;
+        this.freshness = freshness;
         stemLength = 10;
         price = 300;
         this.hasSpikes = hasSpikes;
@@ -39,12 +39,6 @@ public final class Rose extends BushFlower {
 
     public boolean hasSpikes() {
         return hasSpikes;
-    }
-
-    public void setFreshness(int freshness) {
-        if (freshness >= 0) {
-            this.freshness = freshness;
-        }
     }
 
     @Override

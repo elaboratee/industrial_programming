@@ -33,6 +33,10 @@ public abstract class Flower {
         return isInRange;
     }
 
+    public String getName() {
+        return this.getClass().getSimpleName();
+    }
+
     @Override
     public boolean equals(Object object) {
         if (this == object) return true;

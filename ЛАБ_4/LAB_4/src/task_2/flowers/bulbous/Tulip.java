@@ -13,10 +13,10 @@ public final class Tulip extends BulbousFlower {
         price = 180;
     }
 
-    public Tulip(String color, String shape) {
+    public Tulip(String color, String shape, int freshness) {
         super();
         this.color = color.toLowerCase();
-        freshness = 0;
+        this.freshness = freshness;
         stemLength = 25;
         price = 180;
     }

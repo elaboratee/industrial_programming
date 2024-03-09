@@ -12,6 +12,7 @@ package flowers #DDDDDD {
         + double getStemLength()
         + int getPrice()
         + boolean isInStemRange()
+        + String getName()
         --
         + boolean equals()
         + int hashCode()
@@ -75,7 +76,6 @@ package flowers.bush #DDDDDD {
         - boolean hasSpikes
         == Methods ==
         + boolean hasSpikes()
-        + void setFreshness()
         --
         + boolean equals()
         + int hashCode()
@@ -150,7 +150,108 @@ BulbousFlower <|-- Tulip
 
 MeadowFlower <|-- Chamomile
 
+
 package accessories #DDDDDD {
+    abstract class Accessory {
+        # int price
+        # String color
+        # String material
+        == Methods ==
+        + int getPrice()
+        + String getColor()
+        + String getMaterial()
+        --
+        + boolean equals()
+        + int hashCode()
+        + String toString()
+    }
+
+    class Basket {
+        - String size
+        == Methods ==
+        + String getSize()
+        --
+        + boolean equals()
+        + int hashCode()
+        + String toString()
+    }
+
+    class Postcard {
+        - String content
+        == Methods ==
+        + String getContent()
+        --
+        + boolean equals()
+        + int hashCode()
+        + String toString()
+    }
+
+    class Ribbon {
+        - int length
+        == Methods ==
+        + boolean equals()
+        + int hashCode()
+        + String toString()
+    }
+
+    class WrappingPaper {
+        - int width
+        - int length
+        == Methods ==
+        + int getLength()
+        + int getWidth()
+        --
+        + boolean equals()
+        + int hashCode()
+        + String toString()
+    }
 }
+
+Accessory <|-- Basket
+Accessory <|-- Postcard
+Accessory <|-- Ribbon
+Accessory <|-- WrappingPaper
+
+package enums #DDDDDD {
+    enum MenuBar {
+        SORT
+        FIND
+        EXIT
+    }
+}
+
+class TaskMain {
+    == Methods ==
+    + {static} void main()
+    - {static} String printFlowers()
+    - {static} String printFoundFlower()
+}
+
+class Bouquet {
+    - int price
+    - ArrayList<Flower> flowers
+    - ArrayList<Accessory> accessories
+    == Methods ==
+    + void setFlowers()
+    + ArrayList<Flower> getFlowers()
+    + void setAccessories()
+    + ArrayList<Accessory> getAccessories()
+    - {static} int calculateFullPrice()
+    - {static} int calculateFlowerPrice()
+    - {static} int calculateAccessoryPrice()
+    + void sortFlowersByFreshness()
+    --
+    + boolean equals()
+    + int hashCode()
+    + String toString()
+}
+
+class CreateBouquet {
+    == Methods ==
+    + {static} void createBouquet()
+}
+
+Bouquet *-- Flower
+Bouquet *-- Accessory
 
 @enduml
