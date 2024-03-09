@@ -12,6 +12,12 @@ public class BushFlower extends Flower {
         isFrostResistant = false;
     }
 
+    public void setFreshness(int freshness) {
+        if (freshness >= 0) {
+            this.freshness = freshness;
+        }
+    }
+
     @Override
     public boolean equals(Object object) {
         if (this == object) return true;

@@ -50,6 +50,8 @@ package flowers.bush #DDDDDD {
         # boolean hasFetus
         # boolean isFrostResistant
         == Methods ==
+        + void setFreshness()
+        --
         + boolean equals()
         + int hashCode()
         + String toString()
@@ -82,13 +84,60 @@ package flowers.bush #DDDDDD {
 }
 
 package flowers.meadow #DDDDDD {
+    class MeadowFlower {
+        - boolean isFrostResistant
+        == Methods ==
+        + void setFreshness()
+        --
+        + boolean equals()
+        + int hashCode()
+        + String toString()
+    }
+
+    class Chamomile {
+        == Methods ==
+        + boolean equals()
+        + int hashCode()
+        + String toString()
+    }
 }
 
 package flowers.bulbous #DDDDDD {
+    class BulbousFlower {
+        # boolean isFrostResistant
+        == Methods ==
+        + void setFreshness()
+        --
+        + boolean equals()
+        + int hashCode()
+        + String toString()
+    }
+
+    class Narcissus {
+        - String secondColor
+        == Methods ==
+        + String getSecondColor()
+        --
+        + boolean equals()
+        + int hashCode()
+        + String toString()
+    }
+
+    class Tulip {
+        - String shape
+        == Methods ==
+        + String getShape()
+        --
+        + boolean equals()
+        + int hashCode()
+        + String toString()
+    }
 }
 
 Flower <|-- DriedFlower
 Flower <|-- BushFlower
+Flower <|-- BulbousFlower
+Flower <|-- MeadowFlower
 
 DriedFlower <|-- Echinops
 DriedFlower <|-- Gypsophila
@@ -96,6 +145,10 @@ DriedFlower <|-- Gypsophila
 BushFlower <|-- Lilac
 BushFlower <|-- Rose
 
+BulbousFlower <|-- Narcissus
+BulbousFlower <|-- Tulip
+
+MeadowFlower <|-- Chamomile
 
 package accessories #DDDDDD {
 }
