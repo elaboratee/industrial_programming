@@ -3,12 +3,11 @@ package task_1;
 import java.util.Objects;
 
 class Engine {
-    // Fields
     private double volume;
     private int power;
     private double fuelConsumption;
 
-    // Constructors
+    // constructors
     public Engine() {}
 
     public Engine(double volume, int power, double fuelConsumption) {
@@ -17,7 +16,7 @@ class Engine {
         this.fuelConsumption = fuelConsumption;
     }
 
-    // Getters and setters
+    // getters and setters
     public double getVolume() {
         return volume;
     }
@@ -54,7 +53,7 @@ class Engine {
         }
     }
 
-    // Methods
+    // methods
     @Override
     public boolean equals(Object object) {
         if (this == object) return true;

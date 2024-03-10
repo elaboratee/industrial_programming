@@ -7,7 +7,7 @@ public abstract class Accessory {
     protected String color;
     protected String material;
 
-    //Getters
+    // getters
     public int getPrice() {
         return price;
     }
@@ -20,7 +20,7 @@ public abstract class Accessory {
         return material;
     }
 
-    //Methods
+    // methods
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

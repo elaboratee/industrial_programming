@@ -7,19 +7,19 @@ import java.util.Objects;
 public class MeadowFlower extends Flower {
     private boolean isFrostResistant;
 
-    //Constructors
+    // constructors
     public MeadowFlower() {
         isFrostResistant = true;
     }
 
-    //Setters
+    // setters
     public void setFreshness(int freshness) {
         if (freshness >= 0) {
             this.freshness = freshness;
         }
     }
 
-    //Methods
+    // methods
     @Override
     public boolean equals(Object object) {
         if (this == object) return true;

@@ -6,7 +6,6 @@ import java.util.Arrays;
 import java.util.Objects;
 
 class Car {
-    // Fields
     private final String brand;
     private String color;
     private final BodyTypes bodytype;
@@ -17,7 +16,7 @@ class Car {
     private Engine engine;
     private Wheel[] wheels;
 
-    // Constructors
+    // constructors
     public Car(String brand, BodyTypes bodytype) {
         this.brand = brand;
         this.bodytype = bodytype;
@@ -36,7 +35,7 @@ class Car {
         this.wheels = wheels;
     }
 
-    // Getters and setters
+    // getters and setters
     public String getBrand() {
         return brand;
     }
@@ -113,13 +112,13 @@ class Car {
         this.wheels = wheels;
     }
 
-    // Methods
+    // methods
 
     /**
-     * Method that implements movement process.
-     * It's converting distance into fuel and reduces it, if it's possible.
+     * Method that implements movement process
+     * It's converting distance into fuel and reduces it, if it's possible
      * @param travelDistance - how far you want to go in kilometers
-     * @exception IllegalArgumentException - trows is not enough fuel
+     * @exception IllegalArgumentException - throws is not enough fuel
      */
     public void drive(int travelDistance) {
         double requiredFuel = travelDistance * (engine.getFuelConsumption() / 100);
@@ -131,8 +130,8 @@ class Car {
     }
 
     /**
-     * Method sum up available fuel and received fuel.
-     * If sum is higher than maximum amount set maximum.
+     * Method sum up available fuel and received fuel
+     * If sum is higher than maximum amount set maximum
      * @param fuelToFill - amount of received fuel
      */
     public void fillFuel(double fuelToFill) {
@@ -144,7 +143,7 @@ class Car {
     }
 
     /**
-     * Changes current wheel with a new one.
+     * Changes current wheel with a new one
      * @param wheelIndex - index of changing wheel
      * @param newWheel - object wheel
      */

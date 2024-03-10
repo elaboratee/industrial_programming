@@ -6,7 +6,7 @@ public final class Echinops extends DriedFlower {
     private boolean isTerry;
     private boolean isBarbed;
 
-    //Constructors
+    // constructors
     public Echinops() {
         super();
         color = "blue";
@@ -24,7 +24,7 @@ public final class Echinops extends DriedFlower {
         this.isBarbed = isBarbed;
     }
 
-    //Getters
+    // getters
     public boolean isTerry() {
         return isTerry;
     }
@@ -33,7 +33,7 @@ public final class Echinops extends DriedFlower {
         return isBarbed;
     }
 
-    //Methods
+    // methods
     @Override
     public boolean equals(Object object) {
         if (this == object) return true;

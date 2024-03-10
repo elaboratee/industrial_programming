@@ -5,7 +5,7 @@ import java.util.Objects;
 public final class Narcissus extends BulbousFlower {
     private String secondColor;
 
-    //Constructors
+    // constructors
     public Narcissus() {
         super();
         color = "yellow";
@@ -24,12 +24,12 @@ public final class Narcissus extends BulbousFlower {
         price = 800;
     }
 
-    //Getters
+    // getters
     public String getSecondColor() {
         return secondColor;
     }
 
-    //Methods
+    // methods
     @Override
     public boolean equals(Object object) {
         if (this == object) return true;

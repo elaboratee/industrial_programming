@@ -4,7 +4,6 @@ import task_1.enums.Seasonalities;
 import java.util.Objects;
 
 class Wheel {
-    // Fields
     private String manufacturer;
     private String seasonality;
     private int width;
@@ -12,7 +11,7 @@ class Wheel {
     private int radius;
     private boolean spikes;
 
-    // Constructors
+    // constructors
     public Wheel() {}
 
     public Wheel(String manufacturer) {
@@ -25,7 +24,7 @@ class Wheel {
         this.radius = radius;
     }
 
-    // Getters and setters
+    // getters and setters
     public String getManufacturer() {
         return manufacturer;
     }
@@ -102,7 +101,7 @@ class Wheel {
         this.spikes = spikes;
     }
 
-    // Methods
+    // methods
     @Override
     public boolean equals(Object object) {
         if (this == object) return true;

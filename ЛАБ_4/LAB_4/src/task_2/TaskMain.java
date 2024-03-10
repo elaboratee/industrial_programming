@@ -71,9 +71,9 @@ public class TaskMain {
     }
 
     /**
-     * Method collects names and freshness of all flowers in array in one string.
-     * @param flowers - array of flowers.
-     * @return string consists name and freshness of all flowers.
+     * Method collects names and freshness of all flowers in array in one string
+     * @param flowers - array of flowers
+     * @return string consists name and freshness of all flowers
      */
     private static String printFlowers(ArrayList<Flower> flowers) {
         StringBuilder sb = new StringBuilder();

@@ -5,7 +5,7 @@ import java.util.Objects;
 public final class Gypsophila extends DriedFlower {
     private boolean isTerry;
 
-    //Constructors
+    // constructors
     public Gypsophila() {
         super();
         color = "white";
@@ -21,12 +21,12 @@ public final class Gypsophila extends DriedFlower {
         this.isTerry = isTerry;
     }
 
-    //Getters
+    // getters
     public boolean isTerry() {
         return isTerry;
     }
 
-    //Methods
+    // methods
     @Override
     public boolean equals(Object object) {
         if (this == object) return true;

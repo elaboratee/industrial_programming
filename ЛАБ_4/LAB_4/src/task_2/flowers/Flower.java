@@ -8,7 +8,7 @@ public abstract class Flower {
     protected double stemLength;
     protected int price;
 
-    //Getters
+    // getters
     public String getColor() {
         return color;
     }
@@ -29,14 +29,14 @@ public abstract class Flower {
         return this.getClass().getSimpleName();
     }
 
-    //Methods
+    // methods
 
     /**
-     * The method determines whether the length of the stem is within certain limits.
-     * @param lowerBorder - the minimum of length.
-     * @param upperBorder - the maximum of length.
+     * The method determines whether the length of the stem is within certain limits
+     * @param lowerBorder - the minimum of length
+     * @param upperBorder - the maximum of length
      * @return true if length is in certain range
-     *         false is not.
+     *         false if not
      */
     public boolean isInStemRange(double lowerBorder, double upperBorder) {
         boolean isInRange = false;
