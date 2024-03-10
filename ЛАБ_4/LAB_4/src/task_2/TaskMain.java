@@ -4,9 +4,7 @@ package task_2;
 import task_2.enums.MenuBar;
 import task_2.flowers.Flower;
 
-import java.nio.file.Watchable;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class TaskMain {
