@@ -5,6 +5,7 @@ import java.util.Objects;
 public final class Rose extends BushFlower {
     private boolean hasSpikes;
 
+    //Constructors
     public Rose() {
         super();
         color = "pink";
@@ -37,10 +38,12 @@ public final class Rose extends BushFlower {
         this.hasSpikes = hasSpikes;
     }
 
+    //Getters
     public boolean hasSpikes() {
         return hasSpikes;
     }
 
+    //Methods
     @Override
     public boolean equals(Object object) {
         if (this == object) return true;

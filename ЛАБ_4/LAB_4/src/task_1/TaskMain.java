@@ -47,6 +47,10 @@ class TaskMain {
         }
     }
 
+    /**
+     * Prints out array of wheels
+     * @param wheels - array of wheels
+     */
     private static void printWheels(Wheel[] wheels) {
         for (Wheel wheel : wheels) {
             System.out.println(wheel);

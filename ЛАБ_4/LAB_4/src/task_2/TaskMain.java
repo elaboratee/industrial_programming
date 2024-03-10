@@ -9,6 +9,7 @@ import java.util.Scanner;
 
 public class TaskMain {
     public static void main(String[] args) {
+        // Creation of a new bouquet
         Bouquet bouquet = new Bouquet();
         CreateBouquet.createBouquete(bouquet);
         System.out.println(bouquet);
@@ -23,6 +24,7 @@ public class TaskMain {
         Scanner console = new Scanner(System.in);
         MenuBar choice;
 
+        // Transformation byte input into menu option
         try {
             byte userInput = console.nextByte();
             choice = MenuBar.values()[userInput - 1];
@@ -68,6 +70,11 @@ public class TaskMain {
         console.close();
     }
 
+    /**
+     * Method collects names and freshness of all flowers in array in one string.
+     * @param flowers - array of flowers.
+     * @return string consists name and freshness of all flowers.
+     */
     private static String printFlowers(ArrayList<Flower> flowers) {
         StringBuilder sb = new StringBuilder();
 
@@ -79,6 +86,11 @@ public class TaskMain {
         return sb.toString();
     }
 
+    /**
+     * Found name and stem length of flower by ref
+     * @param flower - flower to find
+     * @return string that consists name and stem length of flower
+     */
     private static String printFoundFlower(Flower flower) {
         return flower.getName() +
                 " : " + flower.getStemLength() + " cm";

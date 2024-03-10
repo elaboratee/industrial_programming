@@ -5,6 +5,7 @@ import java.util.Objects;
 public final class Tulip extends BulbousFlower {
     private String shape;
 
+    //Constructors
     public Tulip() {
         super();
         color = "red";
@@ -21,10 +22,13 @@ public final class Tulip extends BulbousFlower {
         price = 180;
     }
 
+    //Getters
     public String getShape() {
         return shape;
     }
 
+
+    //Methods
     @Override
     public boolean equals(Object object) {
         if (this == object) return true;

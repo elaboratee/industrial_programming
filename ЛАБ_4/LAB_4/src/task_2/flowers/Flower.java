@@ -8,6 +8,7 @@ public abstract class Flower {
     protected double stemLength;
     protected int price;
 
+    //Getters
     public String getColor() {
         return color;
     }
@@ -24,6 +25,19 @@ public abstract class Flower {
         return price;
     }
 
+    public String getName() {
+        return this.getClass().getSimpleName();
+    }
+
+    //Methods
+
+    /**
+     * The method determines whether the length of the stem is within certain limits.
+     * @param lowerBorder - the minimum of length.
+     * @param upperBorder - the maximum of length.
+     * @return true if length is in certain range
+     *         false is not.
+     */
     public boolean isInStemRange(double lowerBorder, double upperBorder) {
         boolean isInRange = false;
         if (Double.compare(stemLength, lowerBorder) > 0 &&
@@ -31,10 +45,6 @@ public abstract class Flower {
             isInRange = true;
         }
         return isInRange;
-    }
-
-    public String getName() {
-        return this.getClass().getSimpleName();
     }
 
     @Override

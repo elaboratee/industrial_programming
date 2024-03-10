@@ -10,6 +10,7 @@ public class Bouquet {
     private ArrayList<Flower> flowers;
     private ArrayList<Accessory> accessories;
 
+    //Constructors
     public Bouquet() {}
 
     public Bouquet(ArrayList<Flower> flowers, ArrayList<Accessory> accessories) {
@@ -18,6 +19,7 @@ public class Bouquet {
         this.price = calculateFullPrice(flowers, accessories);
     }
 
+    //Getters and setters
     public void setFlowers(ArrayList<Flower> flowers) {
         this.flowers = flowers;
         this.price += calculateFlowerPrice(flowers);
@@ -40,6 +42,14 @@ public class Bouquet {
         return price;
     }
 
+    //Methods
+
+    /**
+     * Methods sums all prices of included parts.
+     * @param flowers - flowers included.
+     * @param accessories - accessories included.
+     * @return integer of full price of bouquet.
+     */
     private static int calculateFullPrice(ArrayList<Flower> flowers,
                                           ArrayList<Accessory> accessories) {
         int price = 0;
@@ -54,6 +64,11 @@ public class Bouquet {
         return price;
     }
 
+    /**
+     * Methods sums all prices of included flowers.
+     * @param flowers - flowers included.
+     * @return integer of full price of flowers.
+     */
     private static int calculateFlowerPrice(ArrayList<Flower> flowers) {
         int price = 0;
         for (Flower flower : flowers) {
@@ -62,6 +77,11 @@ public class Bouquet {
         return price;
     }
 
+    /**
+     * Methods sums all prices of included accessories.
+     * @param accessories - accessories included.
+     * @return integer of full price of accessories.
+     */
     private static int calculateAccessoryPrice(ArrayList<Accessory> accessories) {
         int price = 0;
         for (Accessory accessory : accessories) {
@@ -70,6 +90,9 @@ public class Bouquet {
         return price;
     }
 
+    /**
+     * Methods sorts array of flowers in bouquet by freshness of each flower.
+     */
     public void sortFlowersByFreshness() {
         int n = flowers.size();
         boolean swapped;

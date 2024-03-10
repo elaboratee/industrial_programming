@@ -6,6 +6,7 @@ public final class Lilac extends BushFlower {
     private boolean hasEdging;
     private String edgingColor;
 
+    //Constructors
     public Lilac() {
         super();
         color = "lilac";
@@ -31,10 +32,7 @@ public final class Lilac extends BushFlower {
         this.edgingColor = edgingColor.toLowerCase();
     }
 
-    public boolean hasEdging() {
-        return hasEdging;
-    }
-
+    //Getters and setters
     public String getEdgingColor() {
         return edgingColor;
     }
@@ -51,6 +49,11 @@ public final class Lilac extends BushFlower {
         }
     }
 
+    public boolean hasEdging() {
+        return hasEdging;
+    }
+
+    //Methods
     @Override
     public boolean equals(Object object) {
         if (this == object) return true;

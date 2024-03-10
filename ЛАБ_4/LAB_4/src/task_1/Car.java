@@ -114,6 +114,13 @@ class Car {
     }
 
     // Methods
+
+    /**
+     * Method that implements movement process.
+     * It's converting distance into fuel and reduces it, if it's possible.
+     * @param travelDistance - how far you want to go in kilometers
+     * @exception IllegalArgumentException - trows is not enough fuel
+     */
     public void drive(int travelDistance) {
         double requiredFuel = travelDistance * (engine.getFuelConsumption() / 100);
         if (fuelValue - requiredFuel >= 0) {
@@ -123,6 +130,11 @@ class Car {
         }
     }
 
+    /**
+     * Method sum up available fuel and received fuel.
+     * If sum is higher than maximum amount set maximum.
+     * @param fuelToFill - amount of received fuel
+     */
     public void fillFuel(double fuelToFill) {
         if (fuelValue + fuelToFill >= fuelTankVolume) {
             fuelValue = fuelTankVolume;
@@ -131,6 +143,11 @@ class Car {
         }
     }
 
+    /**
+     * Changes current wheel with a new one.
+     * @param wheelIndex - index of changing wheel
+     * @param newWheel - object wheel
+     */
     public void changeWheel(int wheelIndex, Wheel newWheel) {
         wheels[wheelIndex] = newWheel;
     }

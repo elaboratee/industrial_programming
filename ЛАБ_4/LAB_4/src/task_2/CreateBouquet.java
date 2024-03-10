@@ -9,6 +9,10 @@ import task_2.flowers.dried.Echinops;
 import java.util.ArrayList;
 
 public class CreateBouquet {
+    /**
+     * Method fill up a received bouquet with flowers and accessories
+     * @param bouquet - empty object bouquet
+     */
     public static void createBouquete(Bouquet bouquet) {
         ArrayList<Flower> flowers = new ArrayList<>();
         ArrayList<Accessory> accessories = new ArrayList<>();

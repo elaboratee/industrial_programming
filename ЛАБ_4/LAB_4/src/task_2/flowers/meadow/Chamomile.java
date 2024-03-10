@@ -1,6 +1,7 @@
 package task_2.flowers.meadow;
 
 public final class Chamomile extends MeadowFlower {
+    //Constructors
     public Chamomile() {
         super();
         color = "white";
@@ -17,6 +18,7 @@ public final class Chamomile extends MeadowFlower {
         price = 200;
     }
 
+    //Methods
     @Override
     public boolean equals(Object object) {
         return super.equals(object);

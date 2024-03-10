@@ -7,17 +7,20 @@ public class BushFlower extends Flower {
     protected boolean hasFetus;
     protected boolean isFrostResistant;
 
+    //Constructors
     public BushFlower() {
         hasFetus = false;
         isFrostResistant = false;
     }
 
+    //Setters
     public void setFreshness(int freshness) {
         if (freshness >= 0) {
             this.freshness = freshness;
         }
     }
 
+    //Methods
     @Override
     public boolean equals(Object object) {
         if (this == object) return true;

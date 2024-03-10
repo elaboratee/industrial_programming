@@ -6,16 +6,19 @@ import java.util.Objects;
 public class BulbousFlower extends Flower {
     protected boolean isFrostResistant;
 
+    //Constructors
     public BulbousFlower() {
         isFrostResistant = true;
     }
 
+    //Setters
     public void setFreshness(int freshness) {
         if (freshness >= 0) {
             this.freshness = freshness;
         }
     }
 
+    //Methods
     @Override
     public boolean equals(Object object) {
         if (this == object) return true;
