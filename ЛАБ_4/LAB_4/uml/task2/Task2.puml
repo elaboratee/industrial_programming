@@ -1,0 +1,257 @@
+@startuml
+
+package flowers #DDDDDD {
+    abstract class Flower {
+        # String color
+        # int freshness
+        # double stemLength
+        # int price
+        == Methods ==
+        + String getColor()
+        + int getFreshness()
+        + double getStemLength()
+        + int getPrice()
+        + boolean isInStemRange()
+        + String getName()
+        --
+        + boolean equals()
+        + int hashCode()
+        + String toString()
+    }
+}
+
+package flowers.dried #DDDDDD {
+    class DriedFlower
+
+    class Echinops {
+        - boolean isTerry
+        - boolean isBarbed
+        == Methods ==
+        + boolean isTerry()
+        + boolean isBarbed()
+        --
+        + boolean equals()
+        + int hashCode()
+        + String toString()
+    }
+
+    class Gypsophila {
+        - boolean isTerry
+        == Methods ==
+        + boolean isTerry()
+        --
+        + boolean equals()
+        + int hashCode()
+        + String toString()
+    }
+}
+
+package flowers.bush #DDDDDD {
+    class BushFlower {
+        # boolean hasFetus
+        # boolean isFrostResistant
+        == Methods ==
+        + void setFreshness()
+        --
+        + boolean equals()
+        + int hashCode()
+        + String toString()
+    }
+
+    class Lilac {
+        - boolean hasEdging
+        - String edgingColor
+        == Methods ==
+        + boolean hasEdging()
+        + String getEdgingColor()
+        + void setEdgingColor()
+        + void setFreshness()
+        --
+        + boolean equals()
+        + int hasEdging()
+        + String toString()
+    }
+
+    class Rose {
+        - boolean hasSpikes
+        == Methods ==
+        + boolean hasSpikes()
+        --
+        + boolean equals()
+        + int hashCode()
+        + String toString()
+    }
+}
+
+package flowers.meadow #DDDDDD {
+    class MeadowFlower {
+        - boolean isFrostResistant
+        == Methods ==
+        + void setFreshness()
+        --
+        + boolean equals()
+        + int hashCode()
+        + String toString()
+    }
+
+    class Chamomile {
+        == Methods ==
+        + boolean equals()
+        + int hashCode()
+        + String toString()
+    }
+}
+
+package flowers.bulbous #DDDDDD {
+    class BulbousFlower {
+        # boolean isFrostResistant
+        == Methods ==
+        + void setFreshness()
+        --
+        + boolean equals()
+        + int hashCode()
+        + String toString()
+    }
+
+    class Narcissus {
+        - String secondColor
+        == Methods ==
+        + String getSecondColor()
+        --
+        + boolean equals()
+        + int hashCode()
+        + String toString()
+    }
+
+    class Tulip {
+        - String shape
+        == Methods ==
+        + String getShape()
+        --
+        + boolean equals()
+        + int hashCode()
+        + String toString()
+    }
+}
+
+Flower <|-- DriedFlower
+Flower <|-- BushFlower
+Flower <|-- BulbousFlower
+Flower <|-- MeadowFlower
+
+DriedFlower <|-- Echinops
+DriedFlower <|-- Gypsophila
+
+BushFlower <|-- Lilac
+BushFlower <|-- Rose
+
+BulbousFlower <|-- Narcissus
+BulbousFlower <|-- Tulip
+
+MeadowFlower <|-- Chamomile
+
+
+package accessories #DDDDDD {
+    abstract class Accessory {
+        # int price
+        # String color
+        # String material
+        == Methods ==
+        + int getPrice()
+        + String getColor()
+        + String getMaterial()
+        --
+        + boolean equals()
+        + int hashCode()
+        + String toString()
+    }
+
+    class Basket {
+        - String size
+        == Methods ==
+        + String getSize()
+        --
+        + boolean equals()
+        + int hashCode()
+        + String toString()
+    }
+
+    class Postcard {
+        - String content
+        == Methods ==
+        + String getContent()
+        --
+        + boolean equals()
+        + int hashCode()
+        + String toString()
+    }
+
+    class Ribbon {
+        - int length
+        == Methods ==
+        + boolean equals()
+        + int hashCode()
+        + String toString()
+    }
+
+    class WrappingPaper {
+        - int width
+        - int length
+        == Methods ==
+        + int getLength()
+        + int getWidth()
+        --
+        + boolean equals()
+        + int hashCode()
+        + String toString()
+    }
+}
+
+Accessory <|-- Basket
+Accessory <|-- Postcard
+Accessory <|-- Ribbon
+Accessory <|-- WrappingPaper
+
+package enums #DDDDDD {
+    enum MenuBar {
+        SORT
+        FIND
+        EXIT
+    }
+}
+
+class TaskMain {
+    == Methods ==
+    + {static} void main()
+    - {static} String printFlowers()
+    - {static} String printFoundFlower()
+}
+
+class Bouquet {
+    - int price
+    - ArrayList<Flower> flowers
+    - ArrayList<Accessory> accessories
+    == Methods ==
+    + void setFlowers()
+    + ArrayList<Flower> getFlowers()
+    + void setAccessories()
+    + ArrayList<Accessory> getAccessories()
+    - {static} int calculateFullPrice()
+    - {static} int calculateFlowerPrice()
+    - {static} int calculateAccessoryPrice()
+    + void sortFlowersByFreshness()
+    --
+    + boolean equals()
+    + int hashCode()
+    + String toString()
+}
+
+class CreateBouquet {
+    == Methods ==
+    + {static} void createBouquet()
+}
+
+Bouquet *-- Flower
+Bouquet *-- Accessory
+
+@enduml
