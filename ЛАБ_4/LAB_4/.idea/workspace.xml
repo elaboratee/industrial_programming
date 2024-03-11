@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a939f776-7571-4f99-b166-c46249ad90d2" name="Changes" comment="Add final changes" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="UML Sequence" />
+        <option value="Class" />
+        <option value="Enum" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/../.." value="dev1" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;elaboratee&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="4b473a40-654d-4e01-808b-3b853140eafb" />
+        <option name="url" value="https://github.com/elaboratee/industrial_programming.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2dDUGCvWEwfY3eJfiouFMa6tkEZ" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.TaskMain.executor": "Run",
+    "Application.task_2.TaskMain.executor": "Run",
+    "DefaultPlantUmlFileTemplate": "UML Sequence",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/РАДИК/ПП/ЛАБЫ/ЛАБ_4",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\РАДИК\ПП\ЛАБЫ\ЛАБ_4\LAB_4\uml\task2" />
+      <recent name="D:\РАДИК\ПП\ЛАБЫ\ЛАБ_4\LAB_4\uml\task1" />
+      <recent name="D:\РАДИК\ПП\ЛАБЫ\ЛАБ_4\LAB_4\UML" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.TaskMain">
+    <configuration name="TaskMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="task_1.TaskMain" />
+      <module name="LAB_4" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="task_1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="task_2.TaskMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="task_2.TaskMain" />
+      <module name="LAB_4" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="task_2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.TaskMain" />
+        <item itemvalue="Application.task_2.TaskMain" />
+        <item itemvalue="Application.TaskMain" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.1-openjdk-21.0.1-4caba194b151-23eed401" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a939f776-7571-4f99-b166-c46249ad90d2" name="Changes" comment="" />
+      <created>1709542049226</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1709542049226</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Add task 1 source code">
+      <option name="closed" value="true" />
+      <created>1709748879461</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1709748879461</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Add task 2 source code">
+      <option name="closed" value="true" />
+      <created>1709833699710</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1709833699710</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Add dried flowers classes">
+      <option name="closed" value="true" />
+      <created>1709840141121</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1709840141121</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Add bush flowers classes">
+      <option name="closed" value="true" />
+      <created>1709842335230</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1709842335230</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Create UML diagram for flowers">
+      <option name="closed" value="true" />
+      <created>1709901574916</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1709901574916</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Create UML diagram for task 1">
+      <option name="closed" value="true" />
+      <created>1709909188489</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1709909188489</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Finish flower classes">
+      <option name="closed" value="true" />
+      <created>1709973204398</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1709973204398</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Finish source code">
+      <option name="closed" value="true" />
+      <created>1709987738524</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1709987738524</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Add class diagrams for both tasks">
+      <option name="closed" value="true" />
+      <created>1709991926692</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1709991926692</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Change class diagram for task 2">
+      <option name="closed" value="true" />
+      <created>1710060862512</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1710060862512</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Add final changes">
+      <option name="closed" value="true" />
+      <created>1710147749153</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1710147749153</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add task 1 source code" />
+    <MESSAGE value="Add task 2 source code" />
+    <MESSAGE value="Add dried flowers classes" />
+    <MESSAGE value="Add bush flowers classes" />
+    <MESSAGE value="Create UML diagram for flowers" />
+    <MESSAGE value="Create UML diagram for task 1" />
+    <MESSAGE value="Finish flower classes" />
+    <MESSAGE value="Finish source code" />
+    <MESSAGE value="Add class diagrams for both tasks" />
+    <MESSAGE value="Change class diagram for task 2" />
+    <MESSAGE value="Add final changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add final changes" />
+  </component>
+</project>
